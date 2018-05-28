@@ -1,0 +1,141 @@
+body{
+	text-align: center;
+}
+/*Блок с оценкой - главный*/
+div.main{
+	margin-bottom: 40px;
+}
+p.assessDay{
+	font-size: 30px;
+	color: #1ad6c0;
+}
+ul.marks{
+	margin: 0;
+}
+ul.marks li{
+	display: inline-block;
+}
+ul.marks li button{
+	font-size: 25px;
+}
+ul.marks li:nth-child(n) button{
+	color: red;
+}
+ul.marks li:nth-child(2n) button{
+	color: #e0412f;
+}
+ul.marks li:nth-child(3n) button{
+	color: #c9574b;
+}
+ul.marks li:nth-child(4n) button{
+	color: #d98d84;
+}
+ul.marks li:nth-child(5n) button{
+	color: #338f8a;
+}
+ul.marks li:nth-child(6n) button{
+	color: #4bd1ca;
+}
+ul.marks li:nth-child(7n) button{
+	color: #78fff8;
+}
+ul.marks li:nth-child(8n) button{
+	color: #66e379;
+}
+ul.marks li:nth-child(9n) button{
+	color: #1aba32;
+}
+ul.marks li:nth-child(10n) button{
+	color: white;
+}
+div.flex{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+button.getMark{
+	animation: onClick 0.25s forwards;
+}
+@keyframes onClick{
+	0%{transform: scale(1);}
+	100%{
+		transform: scale(0.85);
+		color: #FEC92A;
+	}
+}
+div.none {
+	display: none;
+}
+/*Блок с оценками прошедших дней */
+div.marksOfDays{
+	text-align: left;
+}
+div.marksOfDays ul{
+	font-size: 25px;
+}
+span.grade{
+	color: #e08824;
+}
+/*Блок общих планов*/
+div.plan{
+	text-align: right;
+}
+/*This is coded CSS rainbow*/
+.rainbow {
+-webkit-animation:rainbow 1s infinite;
+-ms-animation:rainbow 1s infinite;
+-o-animation:rainbow 1s infinite;
+animation:rainbow 1s infinite;
+}
+@-webkit-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-ms-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-o-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
