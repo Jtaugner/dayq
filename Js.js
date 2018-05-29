@@ -4,7 +4,7 @@ $(function () {
 	   $(".mark").toggleClass('getMark', false);
 	   $(this).toggleClass('getMark');
    });
-   /*Отправить*/
+   /*Отправить данные*/
    let send = function(){
 	   console.log("член");
 	  /*Получаем массив классов getMark для проверок*/
@@ -54,5 +54,21 @@ $(function () {
 		  console.log("Ну где-то ты пытаешься меня обмануть.. Попробуй ещё раз!");
 	  }
    }
-   $(".send").click(send);
+      $(".send").click(send);
+   /*Чекбоксы плана */
+   $(".checkbox").click(function(){
+	   let th = this;
+	   /*если изменено, отправляем запрос в ДБ*/
+	   if($(th).prop('checked') == true){
+		   let number =  $(this).attr("id").match(/\d+/)[0];
+		   $.post("grade.php", {checkedNumber: number, isChecked: 1}, function(d){
+			   console.log(number, d);
+		   });
+	   }else{
+		   let number =  $(this).attr("id").match(/\d+/)[0];
+		   $.post("grade.php", {checkedNumber: number, isChecked: 0}, function(d){
+			   console.log(number, d);
+		   });
+	   }
+   });
 });

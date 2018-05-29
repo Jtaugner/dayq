@@ -1,3 +1,4 @@
+
 body{
 	text-align: center;
 }
@@ -79,6 +80,30 @@ span.grade{
 /*Блок общих планов*/
 div.plan{
 	text-align: right;
+}
+ol.plans{
+	border: 1px solid gray;
+	font-size: 20px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+.checkbox-custom{
+	content: "";
+  display: inline-block;
+  width: 50px;
+  height: 35px;	
+  vertical-align: middle;
+}
+input[type="checkbox"] + .checkbox-custom{
+ background: url(../images/notChecked.png);
+}
+input[type="checkbox"]:checked + .checkbox-custom{
+ transform: scale(0.8);
+ background: url(../images/checked.png);
+}
+label{
+	display: inline
 }
 /*This is coded CSS rainbow*/
 .rainbow {
