@@ -10,7 +10,7 @@ class Settings {
 	public const DATABASE_HOST = 'localhost';
 	public const DATABASE_DATABASE = 'dayq';
 	public const DATABASE_USER = 'root';
-	public const DATABASE_PASSWORD = '1998gardeNa';
+	public const DATABASE_PASSWORD = '';
 	
 	// ### ПРЕДОПРЕДЕЛЁННЫЕ КОНСТАНТЫ
 
