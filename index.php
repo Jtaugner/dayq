@@ -98,5 +98,5 @@ _END;
 }
 //Безопасность
 function sanitizeString($link, $str) {
-	echo 'Разработчики пидоры';
+	echo 'Разработчики крутые';
 }
