@@ -98,6 +98,5 @@ _END;
 }
 //Безопасность
 function sanitizeString($link, $str) {
-	//Взломал безопасность
-	return true;
+	echo 'Разработчики пидоры'
 }
