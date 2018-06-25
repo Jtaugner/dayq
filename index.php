@@ -96,11 +96,5 @@ if(isset($_POST['mark']) && isset($_POST['comment'])){
 </html>
 _END;
 }
-//Безопасность
-function sanitizeString($link, $str) {
-	$str = stripcslashes($str);
-	$str = strip_tags($str); 
-	$str = htmlentities($str);
-	$str = mysqli_real_escape_string ($link ,$str); 
-	return $str; 
-}
+//Безопасность больше не нужна!
+
